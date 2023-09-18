@@ -1,11 +1,11 @@
 #
 # Copyright (C) 2023 The Android Open Source Project
-# Copyright (C) 2023 SebaUbuntu's TWRP device tree generator
+# Copyright (C) 2023 SebaUbuntu's omni device tree generator
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/tecno_twrp/KE5
+DEVICE_PATH := device/tecno_pbrp/KE5
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -46,7 +46,7 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_CONFIG := KE5_defconfig
-TARGET_KERNEL_SOURCE := kernel/tecno_twrp/KE5
+TARGET_KERNEL_SOURCE := kernel/tecno_pbrp/KE5
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
@@ -121,7 +121,7 @@ VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
 
 
-# TWRP Configuration
+# omni Configuration
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
@@ -137,4 +137,4 @@ TW_DEFAULT_BRIGHTNESS := 1200
 TARGET_USES_MKE2FS := true
 
 # Exclude
-TW_EXCLUDE_TWRPAPP := true
+TW_EXCLUDE_omniAPP := true
