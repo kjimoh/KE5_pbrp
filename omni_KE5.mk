@@ -7,7 +7,7 @@
 
 # Inherit from those products. Most specific first.
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/omni_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit some common omni stuff.
 $(call inherit-product, vendor/pb/config/common.mk)
